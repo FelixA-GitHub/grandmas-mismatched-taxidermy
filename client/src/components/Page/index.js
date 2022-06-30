@@ -1,25 +1,19 @@
 //dependencies
 import React from "react";
 import PageContent from "../PageContent";
-import About from "../About";
-import Portfolio from "../Portfolio";
-import Contact from "../Contact";
-import Resume from "../Resume";
+import Listing from "../Listing";
+import Home from "../Home";
 
 function Page({ currentPage }) {
 
     const renderPage = () => {
         switch (currentPage.name) {
-            case 'about':
-                return <About />;
-            case 'portfolio':
-                return <Portfolio />;
-            case 'contact':
-                return <Contact />;
-            case 'resume':
-                return <Resume />;
+            case 'home':
+                return <Home />;
+            case 'listing':
+                return <Listing />;
             default:
-                return <About />;
+                return <Home />;
         }
     };
 
