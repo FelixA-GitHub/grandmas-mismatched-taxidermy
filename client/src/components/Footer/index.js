@@ -13,7 +13,7 @@ function Footer() {
         <MDBFooter className='bg-light text-center text-white'>
           <div className='container p-4 pb-0'>
             <section className='mb-4'>
-              <a
+              {/* <a
                 className='btn btn-primary btn-floating m-1'
                 style={{ backgroundColor: '#ac2bac' }}
                 href='https://stackoverflow.com/users/17420314/felix'
@@ -29,12 +29,12 @@ function Footer() {
                 role='button'
               >
                 <MDBIcon fab icon='linkedin-in' />
-              </a>
+              </a> */}
     
               <a
                 className='btn btn-primary btn-floating m-1'
                 style={{ backgroundColor: '#333333' }}
-                href='https://github.com/FelixA-GitHub'
+                href='https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy.git'
                 role='button'
               >
                 <MDBIcon fab icon='github' />
@@ -43,44 +43,11 @@ function Footer() {
           </div>
     
           <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-            © 2022 Felix Acevedo
+            © 2022 Felix Acevedo, Ryan Uhl, Ryanne Bennett, Joseph Shaw
           </div>
         </MDBFooter>
       );
-
-    //social media icons and corresponding links
-    // const icons = [
-    //     {
-    //         name: "fab fa-github",
-    //         link: "https://github.com/FelixA-GitHub"
-    //     },
-    //     {
-    //         name: "fab fa-linkedin",
-    //         link: "https://www.linkedin.com/in/felix-acevedo-b7596520a/"
-    //     },
-    //     {
-    //         name: "fab fa-stack-overflow",
-    //         link: "https://stackoverflow.com/users/17420314/felix"
-    //     }
-
-    // ]
-
-    // return (
-    //     <section>
-    //         <footer>
-    //             <div className="divbar navbar-light bg-light">
-    //                 <div className="navbar-brand" href="#home">{icons.map(icon =>
-    //                 (
-    //                     <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
-    //                         <i className={icon.name} aria-hidden="true"></i>
-    //                     </a>
-    //                 )
-    //                 )}
-    //                 </div>
-    //             </div>
-    //         </footer>
-    //     </section>
-    // );
+    
 };
 
 
