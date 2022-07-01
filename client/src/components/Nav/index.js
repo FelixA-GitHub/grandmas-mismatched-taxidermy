@@ -18,7 +18,7 @@ function Nav(props) {
 
     <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
 
-        <a className="navbar-brand" href="/">Felix Acevedo</a>
+        <a className="navbar-brand" href="/">make this a logo</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
