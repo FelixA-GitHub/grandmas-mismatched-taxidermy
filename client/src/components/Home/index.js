@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import coverImage from '../../assets/cover/cover-image.jpg';
+import coverImage from '../../assets/cover/cover-image.jpg';
 // import avatar from '../../assets/avatar/avatar.jpg'
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -23,7 +23,7 @@ function Home() {
     <section className="Home-example">
       
         <div className="card border-0">
-          {/* <img className="card-img-top vh-100" src={coverImage} alt="light bulb"></img> */}
+          <img className="card-img-top vh-100" src={coverImage} alt="light bulb"></img>
           <div className="card-img-overlay card-inverse Home-content scroll-text">
             <h1 className="Home-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
             {/* <img className="avatar-img" src={avatar} alt="avatar"></img> */}
