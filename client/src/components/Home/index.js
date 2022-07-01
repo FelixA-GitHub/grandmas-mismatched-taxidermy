@@ -34,8 +34,8 @@ function Home() {
     //     </div>
     // </section>
 
-    <section className="hero">
-        <div className="hero-cta">
+    <section className="hero home-title">
+        <div className="hero-cta home-content">
             <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
             <p className="home-desc home-text">{currentPage.description}</p>
         </div>
