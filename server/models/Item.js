@@ -7,13 +7,20 @@ const itemSchema = new Schema({
         trim: true,
       },
 
-    ItemDescription: {
+    itemDescription: {
     type: String,
     required: 'You need to leave an item description!',
     minlength: 1,
     maxlength: 280,
     trim: true,
   },
+
+  itemPrice: {
+    type: Number,
+    required: true,
+    trim: true,
+  },
+
   createdAt: {
     type: Date,
     default: Date.now,
