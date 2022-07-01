@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Home Area */
+
+.home-example {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  display: block;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+
+.home-title {
+  padding-top: 5%;
+  color: black;
+  text-shadow: 2px 2px lightgray;
+  text-align: center;
+}
+
+.home-desc {
+  color: black;
+  text-shadow: 2px 2px lightgray;
+  text-align: center;
+  font-size: larger;
+  margin: 5% auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.avatar-img {
+width: 10rem;
+height: 10rem;
+border-radius: 50%;
+}
+
+/* Nav Area */
+.bg-nav, .bg-footer {
+  background-color: #CAD2C5;
+}

@@ -20,15 +20,15 @@ function Home() {
   const [currentPage] = useState(pages[0]);
 
   return (
-    <section className="Home-example">
+    <section className="home-example">
       
         <div className="card border-0">
           <img className="card-img-top vh-100" src={coverImage} alt="light bulb"></img>
-          <div className="card-img-overlay card-inverse Home-content scroll-text">
-            <h1 className="Home-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+          <div className="card-img-overlay card-inverse home-content scroll-text">
+            <h1 className="home-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
             {/* <img className="avatar-img" src={avatar} alt="avatar"></img> */}
             <div>            
-              <p className="Home-desc Home-text">{currentPage.description}</p>
+              <p className="home-desc home-text">{currentPage.description}</p>
             </div>
           </div>
         </div>
