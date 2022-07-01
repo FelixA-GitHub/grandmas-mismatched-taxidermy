@@ -1,1 +1,3 @@
-//set up all mongoose models here
+const User = require('./User')
+
+module.exports = { User};

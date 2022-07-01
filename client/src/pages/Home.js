@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <main>
-        <div class="text-primary">
+        <div className="text-primary">
         Hello!!!!
         </div>
     </main>
