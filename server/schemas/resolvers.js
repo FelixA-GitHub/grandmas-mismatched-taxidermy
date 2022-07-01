@@ -3,7 +3,8 @@ const { User, } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
-  Mutation: {addUser: async (parent, { username, email, password }) => {
+  Mutation: {
+    addUser: async (parent, { username, email, password }) => {
     // First we create the user
     const user = await User.create({ username, email, password });
     // To reduce friction for the user, we immediately sign a JSON Web Token and log the user in after they are created
