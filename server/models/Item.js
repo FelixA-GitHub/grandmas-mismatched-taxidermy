@@ -21,6 +21,11 @@ const itemSchema = new Schema({
     trim: true,
   },
 
+  image: {
+    data: Buffer,
+    contentType: String,
+  },
+
   createdAt: {
     type: Date,
     default: Date.now,
