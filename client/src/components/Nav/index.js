@@ -15,13 +15,19 @@ function Nav(props) {
   }, [currentPage]);
 
   return (
-
+    // Navbar
     <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
-
-        <a className="navbar-brand" href="/">make this a logo</a>
+      {/* Container wrapper */}
+      <div className='container'>
+        {/* Navbar brand */}
+        <a className="navbar-brand" href="/">
+          make this a logo
+        </a>
+        {/* Toggle button */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
+        {/* Collapsible wrapper */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav mr-auto mt-2 mt-lg-0">
             {pages.map((Page) => (
@@ -36,29 +42,25 @@ function Nav(props) {
               </div>
             ))}
           </div>
+          {/* Right items */}
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-link px-3 me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-primary me-3">
+              Sign up for free
+            </button>
+            {/* <a
+              class="btn btn-dark px-3"
+              href="https://github.com/mdbootstrap/mdb-ui-kit"
+              role="button"
+            ><i class="fab fa-github"></i
+            ></a> */}
+          </div>
         </div>
-
+      </div>
     </nav>
-
-    // <Navbar bg="light" expand="lg">
-    //   <Container>
-    //     <Navbar.Brand href="#home">Felix Acevedo</Navbar.Brand>
-    //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //     <Navbar.Collapse id="basic-navbar-nav">
-    //       <Nav className="me-auto">
-    //         <Nav.Link href="#home">Home</Nav.Link>
-    //         <Nav.Link href="#link">Link</Nav.Link>
-    //         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-    //           <NavDropdown.Item href="#action/3.1">action</NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-    //           <NavDropdown.Divider />
-    //           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-    //         </NavDropdown>
-    //       </Nav>
-    //     </Navbar.Collapse>
-    //   </Container>
-    // </Navbar>
+   
   );
 }
 
