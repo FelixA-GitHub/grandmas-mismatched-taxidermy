@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const commentSchema = require('./Comment')
 
 const itemSchema = new Schema({
     itemName: {
@@ -31,10 +32,21 @@ const itemSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
-  comments: [
-   
-  ],
-});
+
+  comments: [commentSchema],
+},
+  
+{
+  toJSON: {
+    virtuals: true,
+  },
+},
+
+);
+
+itemSchema.virutal('comments').get(function() {
+  return this.comments.length;
+})
 
 const Item = model('Item', itemSchema);
 

@@ -1,13 +1,14 @@
-const { Schema, model } = require('mongoose');
+const { Schema } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
-const CommentSchema = new Schema({
-    Username: {
+
+const commentSchema = new Schema({
+    username: {
         type: String,
         required: true,
         trim: true,
       },
   
-    CommentText: {
+    commentText: {
     type: String,
     required: 'Leave a Comment!',
     minlength: 1,
@@ -41,5 +42,4 @@ const CommentSchema = new Schema({
   ],
 });
 
-const Comment = model('Comment', CommentSchema);
-module.exports = Comment;
+module.exports = commentSchema;

@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Item, Comment } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -31,8 +31,16 @@ const resolvers = {
     const token = signToken(user);
 
     return { token, user };
-  },}
+  },
+  addItem: async (parent, {itemName, itemDescription, itemPrice, image }) => {
+    const item = await Item.create({itemName, itemDescription, itemPrice, image});
+    return item;
+  }
+}
   
 }
+
+//update an item
+//update comments
 
 module.exports = resolvers;
