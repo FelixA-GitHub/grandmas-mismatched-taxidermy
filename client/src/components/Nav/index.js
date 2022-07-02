@@ -29,7 +29,7 @@ function Nav(props) {
         </button>
         {/* Collapsible wrapper */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="navbar-nav mr-auto mt-2 mt-lg-0">
+          <div className="navbar-nav ms-auto mt-2 mt-lg-0">
             {pages.map((Page) => (
               <div
                 className={`nav-item nav-link ${currentPage.name === Page.name && 'navActive'}`} key={Page.name}
@@ -44,10 +44,12 @@ function Nav(props) {
           </div>
           {/* Right items */}
           <div class="d-flex align-items-center">
-            <button type="button" class="btn btn-link px-3 me-2">
+            <button type="button" class="btn btn-link px-0 me-2">
               Login
             </button>
-            <button type="button" class="btn btn-primary me-3">
+          </div>
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-primary me-2 my-2">
               Sign up for free
             </button>
             {/* <a
@@ -60,7 +62,7 @@ function Nav(props) {
         </div>
       </div>
     </nav>
-   
+
   );
 }
 
