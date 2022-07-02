@@ -2,13 +2,13 @@ const { Schema, model } = require('mongoose');
 const commentSchema = require('./Comment')
 
 const itemSchema = new Schema({
-    itemName: {
+    name: {
         type: String,
         required: true,
         trim: true,
       },
 
-    itemDescription: {
+    description: {
     type: String,
     required: 'You need to leave an item description!',
     minlength: 1,
@@ -16,7 +16,7 @@ const itemSchema = new Schema({
     trim: true,
   },
 
-  itemPrice: {
+   price: {
     type: Number,
     required: true,
     trim: true,
@@ -27,13 +27,13 @@ const itemSchema = new Schema({
     contentType: String,
   },
 
-  createdAt: {
+  created: {
     type: Date,
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
 
-  comments: [commentSchema],
+  // comments: [commentSchema],
 },
   
 {
@@ -44,9 +44,9 @@ const itemSchema = new Schema({
 
 );
 
-itemSchema.virutal('comments').get(function() {
-  return this.comments.length;
-})
+// itemSchema.virutal('comments').get(function() {
+//   return this.comments.length;
+// })
 
 const Item = model('Item', itemSchema);
 
