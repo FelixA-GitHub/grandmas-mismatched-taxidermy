@@ -36,11 +36,11 @@ const itemSchema = new Schema({
   // comments: [commentSchema],
 },
   
-{
-  toJSON: {
-    virtuals: true,
-  },
-},
+// {
+//   toJSON: {
+//     virtuals: true,
+//   },
+// },
 
 );
 
