@@ -1,7 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Item, Comment } = require('../models');
 const { signToken } = require('../utils/auth');
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
 
 const resolvers = {
   // Query: {
@@ -15,7 +15,7 @@ const resolvers = {
 
   Query: {
     item: async (parent, { _id }) => {
-      return await Item.findById(_id).populate('category');
+      return await Item.findById(_id);
     },
   },
   
@@ -39,8 +39,8 @@ const resolvers = {
 
     return { token, user };
   },
-  addItem: async (parent, {itemName, itemDescription, itemPrice, image }) => {
-    const item = await Item.create({itemName, itemDescription, itemPrice, image});
+  addItem: async (parent, {name, description, price, image, created }) => {
+    const item = await Item.create({name, description, price, image, created});
     return item;
   },
 

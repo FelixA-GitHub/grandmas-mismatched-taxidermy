@@ -1,13 +1,14 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_ITEMS = gql`
+export const QUERY_ITEM = gql`
   query getItems {
-    items {
+    item {
       _id
       name
       description
       price
       image
+      created
     }
   }
 `;
@@ -19,6 +20,8 @@ export const QUERY_ALL_ITEMS = gql`
       name
       description
       price
+      image
+      created
     }
   }
 `;
@@ -27,8 +30,10 @@ export const QUERY_ALL_ITEMS = gql`
 export const QUERY_USER = gql`
   {
     user {
-      firstName
-      lastName
+      username
     }
   }
 `;
+
+
+
