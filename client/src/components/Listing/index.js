@@ -5,7 +5,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SaleItem from '../SaleItem';
+import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 //Listing function holds all the items to be presented to the viewer
 function Listing() {
