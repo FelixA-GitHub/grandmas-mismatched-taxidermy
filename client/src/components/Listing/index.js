@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SaleItem from '../SaleItem';
+import './index.js';
 import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -70,10 +71,13 @@ function Listing() {
 
                         {items.map((item, idx) => (
                             <Col md={6}>
-                                <SaleItem
-                                    item={item}
-                                    key={"item" + idx}
-                                />
+                                <div className="item-animation">
+                                    <SaleItem
+                                        item={item}
+                                        key={"item" + idx}
+                                    />
+                                </div>
+
                             </Col>
                         ))}
                     </Row>
