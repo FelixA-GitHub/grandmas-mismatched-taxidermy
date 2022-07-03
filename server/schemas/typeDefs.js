@@ -8,7 +8,7 @@ const typeDefs = gql`
     itemPrice: Float
     image: String
     comments: [Comment]!
-    createdAt: Date
+    createdAt: String
 
   }
 
@@ -16,14 +16,8 @@ const typeDefs = gql`
     _id: ID 
     username: String 
     commentText: String
-    createdAt: Date
+    createdAt: String
 
-  }
-
-  type Order {
-    _id: ID
-    purchaseDate: String
-    products: [Item]
   }
 
   type User {
@@ -33,9 +27,6 @@ const typeDefs = gql`
     password: String
   }
   
-  type Checkout {
-    session: ID
-  }
 
   type Auth {
     token: ID!
@@ -46,19 +37,21 @@ const typeDefs = gql`
    users: [User]
    user(username: String!): User
    items: [Item]!
-   item(_id: ID!): Item
    comments: [Comment]!
    item(comment: ID!): [Comment]
-   order(_id: ID!): Order
-   checkout(products: [ID]!): Checkout
 
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
-    addOrder(items: [ID]!): Order
+    # addOrder(items: [ID]!): Order
     updateUser(username: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
+    # add items
+    # delete item
+    # edit item
+    # add comment
+    # delete comment
   }
 `;
 
