@@ -3,6 +3,8 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { LOGIN_USER } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 import { useMutation } from '@apollo/react-hooks';
+import { capitalizeFirstLetter } from "../../utils/helpers";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 const Login = () => {
     const [userFormData, setUserFormData] = useState({ email: '', password: '' });
@@ -49,8 +51,8 @@ const Login = () => {
 
     return (
         <>
-            <div className=''>
-                {currentPage.description}
+            <div className='d-flex justify-content-center'>
+                <h1 data-testid="h1tag" className="title" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
             </div>
             <div className='container'>
                 <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
