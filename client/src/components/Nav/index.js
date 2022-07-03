@@ -43,11 +43,11 @@ function Nav(props) {
             ))}
           </div>
           {/* Right items */}
-          <div class="d-flex align-items-center">
+          {/* <div class="d-flex align-items-center">
             <button type="button" class="btn btn-link px-0 me-2">
               Login
             </button>
-          </div>
+          </div> */}
           <div class="d-flex align-items-center">
             <button type="button" class="btn btn-primary me-2 my-2">
               Sign up for free
