@@ -26,37 +26,37 @@ function Listing() {
             name: 'kermit',
             description: 'We have a celebrity in the house!',
             price: '$59.99',
-            repo: 'https://github.com/FelixA-GitHub/run-buddy.git'
+            purchase: 'https://github.com/FelixA-GitHub/run-buddy.git'
         },
         {
             name: 'bunny-in-dress',
             description: "Isn't she lovely? - Stevie Wonder",
             price: '75.00',
-            repo: 'https://github.com/FelixA-GitHub/Data-Mammoth.git'
+            purchase: 'https://github.com/FelixA-GitHub/Data-Mammoth.git'
         }
         // {
         //     name: 'regal-care',
         //     description: 'JavaScript/Handlebars/MySQL',
         //     link: 'https://regal-care-inc.herokuapp.com/',
-        //     repo: 'https://github.com/FelixA-GitHub/grasshopper-travel.git'
+        //     purchase: 'https://github.com/FelixA-GitHub/grasshopper-travel.git'
         // },
         // {
         //     name: 'tech-blog',
         //     description: 'JavaScript/Handlebars/CSS',
         //     link: 'https://quiet-refuge-09071.herokuapp.com/homepage',
-        //     repo: 'https://github.com/FelixA-GitHub/Fizzy-Tech-Blog.git'
+        //     purchase: 'https://github.com/FelixA-GitHub/Fizzy-Tech-Blog.git'
         // },
         // {
         //     name: 'e-commerce',
         //     description: 'MySQL/Sequelize/Express',
         //     link: 'https://watch.screencastify.com/v/IHmJwKGaOrKkWfO4aNBF',
-        //     repo: 'https://github.com/FelixA-GitHub/Fizz-E-Commerce-Back-End.git'
+        //     purchase: 'https://github.com/FelixA-GitHub/Fizz-E-Commerce-Back-End.git'
         // },
         // {
         //     name: 'note-taker',
         //     description: 'Express/Node/FS/Heroku',
         //     link: 'https://fizzy-note-taker.herokuapp.com/',
-        //     repo: 'https://github.com/FelixA-GitHub/note-taker-express.git'
+        //     purchase: 'https://github.com/FelixA-GitHub/note-taker-express.git'
         // }
     ])
 

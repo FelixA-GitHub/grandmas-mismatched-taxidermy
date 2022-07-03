@@ -3,7 +3,7 @@ import { removeHyphens, capitalizeFirstLetter } from "../../utils/helpers";
 import 'bootstrap/dist/css/bootstrap.css';
 
 function SaleItem({ item }) {
-    const { name, description, price, repo } = item;
+    const { name, description, price, purchase } = item;
 
     return (
         <div className="container-fluid">
@@ -11,18 +11,18 @@ function SaleItem({ item }) {
                 <div className="card p-1" style={{ width: "18rem" }}>
                     <img className="card-img-top" src={require(`../../assets/listing/${name}.jpg`)}
                         alt={removeHyphens(name) && capitalizeFirstLetter(name)} />
-                    <div className="card-img-overlay example">
+                    {/* <div className="card-img-overlay example"> */}
                         <div className="card-body content">
                             <p className="card-text">{description}</p>
                             <p className="card-text">{price}</p>
                             <div>
-                                <a href={repo}>
-                                    <i className="fab fa-github"> Repo</i>
+                                <a href={purchase}>
+                                <i class="fas fa-money-bill-wave-alt"></i>
                                 </a>
                             </div>
 
                         </div>
-                    </div>
+                    {/* </div> */}
 
                 </div>
             </div>
