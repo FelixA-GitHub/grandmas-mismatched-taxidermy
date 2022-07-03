@@ -22,7 +22,8 @@ function App() {
       name: 'home'
     },
     { name: 'listing' },
-    { name: 'login'}
+    { name: 'login'},
+    { name: 'signup'}
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);

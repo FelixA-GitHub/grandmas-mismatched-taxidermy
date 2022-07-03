@@ -14,8 +14,8 @@ const Signup = () => {
 
     const [pages] = useState([
         {
-            name: "Login",
-            description: 'Login page'
+            name: "Signup",
+            description: 'Signup page'
 
         }
     ]);
@@ -49,6 +49,9 @@ const Signup = () => {
     };
     return (
         <>
+            <div className='d-flex justify-content-center'>
+                <h1 data-testid="h1tag" className="title" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            </div>
             <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                 <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>Signup went wrong!</Alert>
 
