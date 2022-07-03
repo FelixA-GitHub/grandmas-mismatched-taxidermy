@@ -18,7 +18,7 @@ function Nav(props) {
 
   return (
     // Navbar
-    <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <nav className="navbar sticky-top navbar-light bg-light px-3">
       {/* Container wrapper */}
       <div className='container-fluid'>
         {/* Navbar brand */}
