@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 
-//this is a toggle
-const PageContent = (props) => {
-    return (
-        <div>
-            {props.children}
-        </div>
-    );
-};
+// //this is a toggle
+// const PageContent = (props) => {
+//     return (
+//         <div>
+//             {props.children}
+//         </div>
+//     );
+// };
 
-export default PageContent;
+// export default PageContent;

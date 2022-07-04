@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import Signup from './pages/Signup';
+import Listing from './components/Listing';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Page from './components/Page';
