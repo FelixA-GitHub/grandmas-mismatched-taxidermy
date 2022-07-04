@@ -1,4 +1,16 @@
-import gql from 'graphql-tag';
+import { gql } from '@apollo/client';
+
+export const ADD_ITEM = gql`
+  mutation addItem($name: String!, $description: String!, $price: Float!, $image: String!, $created: Date!) {
+    addItem(name: $name, description: $description, price: $price, image: $image ) {
+      _id
+      name
+      description
+      price
+      image
+    }
+  }
+`;
 
 export const ADD_USER = gql`
 mutation addUser( $username: String!, $password: String!, $email: String! ) {
@@ -20,4 +32,8 @@ mutation loginUser( $email: String!, $password: String! ) {
         }
     }
 }
+<<<<<<< HEAD
 `;
+=======
+`;
+>>>>>>> feature-login
