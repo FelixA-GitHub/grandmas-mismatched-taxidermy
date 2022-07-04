@@ -7,7 +7,7 @@ const typeDefs = gql`
     description: String
     price: Float
     image: String
-    createdAt: String
+    created: String
      # comments: [Comment]!
 
   }
