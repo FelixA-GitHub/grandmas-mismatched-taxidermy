@@ -13,7 +13,7 @@ const Header = () => {
         // <header className='sticky-top navbar-light bg-light'>
         //     {props.children}
         // </header>
-        <header className="flex-row align-center">
+        <header className="sticky-top flex-row align-center">
             {/* <div className="container flex-row justify-space-between-lg justify-center align-center">
                 <Link to="/">
                     <h6 className='justify-content-center mt-2'>Grandma's Mismatched Taxidermy</h6>
