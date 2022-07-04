@@ -1,23 +1,29 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Item } = require('../models');
+const { User, Item, Comment } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
 const resolvers = {
   Query: {
-    user: async (parent, args, context) => {
-      if (context.user) {
-        const userData = await User.findOne({ _id: context.user._id })
-          .select('-__v -password');
-
-        return userData;
-      }
-
-      throw new AuthenticationError('Not logged in');
+    user: async (parent, args) => {
+      return User.findById(args.id)
     },
-    item: async (parent, { _id }) => {
-      return await Item.findById(_id);
+    users: async () => {
+      return User.find();
     },
+    item: async (parent, args) => {
+      return await Item.findById(args);
+    },
+    items: async () => {
+      return Item.find();
+    },
+    comments: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Comment.find(params);
+    },
+    comment: async (parent, { commentId }) => {
+      return Comment.findOne({ _id: commentId });
+    }
   },
 
   Mutation: {
@@ -40,10 +46,29 @@ const resolvers = {
 
       return { token, user };
     },
-    addItem: async (parent, { name, description, price, image, created }) => {
-      const item = await Item.create({ name, description, price, image, created });
+    addItem: async (parent, { name, description, price, image }) => {
+      const item = await Item.create({ name, description, price, image });
       return item;
     },
+    addComment: async(parent, {commentText, username}) => {
+      const comment = await Comment.create({commentText, username});
+
+      await User.findOneAndUpdate(
+        { username: username },
+        { $addToSet: { comments: comment._id } }
+      );
+      return comment;
+    },
+    removeItem: async(parent, {itemId}) => {
+      return Item.findOneAndDelete({_id: itemId});
+    },
+    removeComment: async(parent, {commentId}) => {
+      return Comment.findOneAndDelete({_id: commentId});
+    },
+    removeUser: async(parent, {userId}) => {
+      return User.findOneAndDelete({_id: userId})
+    }
+   
 
   }
 
