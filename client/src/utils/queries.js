@@ -28,7 +28,14 @@ export const QUERY_ITEM = gql`
 export const QUERY_USER = gql`
   {
     user {
+      _id
       username
+      email
+      comments {
+        username
+        commentText
+        created
+      }
     }
   }
 `;
