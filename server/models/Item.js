@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-
 const itemSchema = new Schema({
     name: {
         type: String,
@@ -27,26 +26,18 @@ const itemSchema = new Schema({
     type: String,
   },
 
-  // created: {
-  //   type: Date,
-  //   default: Date.now,
-  //   get: (timestamp) => dateFormat(timestamp),
-  // },
+  created: {
+    type: Date,
+    default: Date.now,
+    get: (timestamp) => dateFormat(timestamp),
+  },
 
-  // comments: [commentSchema],
+ 
 },
   
-// {
-//   toJSON: {
-//     virtuals: true,
-//   },
-// },
+
 
 );
-
-// itemSchema.virutal('comments').get(function() {
-//   return this.comments.length;
-// })
 
 const Item = model('Item', itemSchema);
 

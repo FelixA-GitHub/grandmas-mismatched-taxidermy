@@ -9,21 +9,22 @@ const resolvers = {
       return User.findById(args.id)
     },
     users: async () => {
-      return User.find();
+      return User.find().populate('comments');
     },
     item: async (parent, args) => {
-      return await Item.findById(args);
+      return await Item.findById(args.id);
     },
     items: async () => {
       return Item.find();
+    },
+    comment: async (parent, args ) => {
+      return Comment.findById( args.id );
     },
     comments: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Comment.find(params);
     },
-    comment: async (parent, { commentId }) => {
-      return Comment.findOne({ _id: commentId });
-    }
+    
   },
 
   Mutation: {
@@ -55,7 +56,7 @@ const resolvers = {
 
       await User.findOneAndUpdate(
         { username: username },
-        { $addToSet: { comments: comment._id } }
+        { $addToSet: { comments: comment} }
       );
       return comment;
     },

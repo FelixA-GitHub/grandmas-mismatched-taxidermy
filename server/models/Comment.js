@@ -7,7 +7,6 @@ const commentSchema = new Schema({
         required: true,
         trim: true,
       },
-  
     commentText: {
     type: String,
     required: 'Leave a Comment!',
@@ -15,6 +14,13 @@ const commentSchema = new Schema({
     maxlength: 280,
     trim: true,
   },
+  
+  created: {
+    type: Date,
+    default: Date.now,
+    get: (timestamp) => dateFormat(timestamp),
+  },
+
   
   // reply: [
   //   {
