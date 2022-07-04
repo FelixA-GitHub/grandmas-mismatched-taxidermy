@@ -1,7 +1,8 @@
 
-import React, { useState } from 'react';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import React from 'react';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { setContext } from '@apollo/client/link/context';
 import Home from './components/Home';
 import Header from './components/Header';
 import Nav from './components/Nav';
@@ -10,6 +11,19 @@ import Footer from './components/Footer';
 // import "../node_modules/jquery/dist/jquery.min.js";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -17,28 +31,55 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [pages] = useState([
-    {
-      name: 'home'
-    },
-    { name: 'listing' },
-    { name: 'login'},
-    { name: 'signup'}
-  ]);
+  // const [pages] = useState([
+  //   {
+  //     name: 'home'
+  //   },
+  //   { name: 'listing' },
+  //   { name: 'login'},
+  //   { name: 'signup'}
+  // ]);
 
-  const [currentPage, setCurrentPage] = useState(pages[0]);
+  // const [currentPage, setCurrentPage] = useState(pages[0]);
 
 
   return (
     <ApolloProvider client={client}>
-      {/* <Router>
-        <Routes>
-          <Route path="/"
-            element={<Home />} />
-        </Routes>
-      </Router> */}
-      <Header>
-
+      <Router>
+        <div className="flex-column justify-flex-start min-100-vh">
+          <Header />
+          <div className="container">
+            <Routes>
+              <Route
+                path="/"
+                element={<Home />}
+              />
+              <Route
+                path="/listing"
+                element={<Listing />}
+              />
+              <Route
+                path="/login"
+                element={<Login />}
+              />
+              <Route
+                path="/signup"
+                element={<Signup />}
+              />
+              {/* <Route 
+                path="/thought/:id" 
+                element={<SingleThought />} 
+              /> */}
+              <Route
+                path="*"
+                element={<NoMatch />}
+              />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+      {/* 
         <Nav
           pages={pages}
           setCurrentPage={setCurrentPage}
@@ -49,7 +90,7 @@ function App() {
       <main>
         <Page currentPage={currentPage}></Page>
       </main>
-      <Footer />
+      <Footer /> */}
     </ApolloProvider>
   );
 }
