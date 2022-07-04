@@ -32,8 +32,4 @@ mutation loginUser( $email: String!, $password: String! ) {
         }
     }
 }
-<<<<<<< HEAD
 `;
-=======
-`;
->>>>>>> feature-login
