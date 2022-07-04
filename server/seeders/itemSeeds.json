@@ -1,8 +1,15 @@
 [
     {
-      "name": "Freaky Frog",
-      "description": "Freaky Kermitt the Frog",
-      "price": 14.95
+      "name": "Funny Bunny Dress",
+      "description": "Bunny in dress",
+      "price": 100.75,
+      "image": "bunny-in-dress.jpg"
+    },
+    {
+      "name": "Somewhere Over The Rainbow",
+      "description": "Freaky Kermit the Frog",
+      "price":  200.25,
+      "image": "kermit.jpg"
     }
-
+    
   ]
