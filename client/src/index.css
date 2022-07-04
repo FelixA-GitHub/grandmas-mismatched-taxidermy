@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,7 +13,7 @@ code {
     monospace;
 }
 
-/* Trial */
+/* Homepage */
 .hero {
   background-image: url(../src/assets/cover/cover-image.jpg);
   background-size: cover;
@@ -84,6 +85,28 @@ code {
 /* Nav Area */
 .bg-nav, .bg-footer {
   background-color: #CAD2C5;
+}
+
+/* Listing Area */
+.item-animation {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.item-animation:hover {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: headShake; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+div .col-md-6 {
+  display: flex;
+  justify-content: center;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */

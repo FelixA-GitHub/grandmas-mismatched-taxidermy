@@ -13,7 +13,7 @@ function Footer() {
     <MDBFooter className='bg-light text-center text-white'>
       {/* <div className='container p-4 pb-0'>
         <section className='mb-4'> */}
-          {/* <a
+      {/* <a
                 className='btn btn-primary btn-floating m-1'
                 style={{ backgroundColor: '#ac2bac' }}
                 href='https://stackoverflow.com/users/17420314/felix'
@@ -32,7 +32,7 @@ function Footer() {
               </a> */}
 
 
-        {/* </section>
+      {/* </section>
       </div> */}
 
       <div className='text-center p-4 margin-top' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
@@ -46,7 +46,9 @@ function Footer() {
             <MDBIcon fab icon='github' />
           </a>
         </div>
-        © 2022 Felix Acevedo, Ryan Uhl, Ryanne Bennett, Joseph Shaw
+        <div className='mt-2'>
+          © 2022 Felix Acevedo, Ryan Uhl, Ryanne Bennett, Joseph Shaw
+        </div>
       </div>
 
     </MDBFooter>
