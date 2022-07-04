@@ -51,17 +51,18 @@ const Login = () => {
 
     return (
         <>
-            <div className='d-flex justify-content-center'>
-                <h1 data-testid="h1tag" className="title" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-            </div>
-            <div className='container'>
-                <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+            <div className='Auth-form-container'>
+                <Form className="Auth-form p-4" noValidate validated={validated} onSubmit={handleFormSubmit}>
+                    <div className='d-flex justify-content-center'>
+                        <h1 data-testid="h1tag" className="title" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+                    </div>
                     <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>Login went wrong!</Alert>
-                    <Form.Group>
+                    <Form.Group className="form-group mt-4">
                         <Form.Label htmlFor='email'>Email</Form.Label>
                         <Form.Control
                             type='text'
                             placeholder='Your Email'
+                            className="form-control mt-1"
                             name='email'
                             onChange={handleInputChange}
                             value={userFormData.email}
@@ -70,11 +71,12 @@ const Login = () => {
                         <Form.Control.Feedback type='invalid'>Email is required!</Form.Control.Feedback>
                     </Form.Group>
 
-                    <Form.Group>
+                    <Form.Group className="form-group mt-4">
                         <Form.Label htmlFor='password'>Password</Form.Label>
                         <Form.Control
                             type='password'
                             placeholder='Your Password'
+                            className="form-control mt-1"
                             name='password'
                             onChange={handleInputChange}
                             value={userFormData.password}
@@ -83,6 +85,7 @@ const Login = () => {
                         <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
                     </Form.Group>
                     <Button
+                        className="btn btn-primary mt-4"
                         disabled={!(userFormData.email && userFormData.password)}
                         type='submit'
                         variant='success'>Submit</Button>
