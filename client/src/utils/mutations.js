@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { gql } from '@apollo/client';
 
 export const ADD_ITEM = gql`
@@ -11,6 +12,9 @@ export const ADD_ITEM = gql`
     }
   }
 `;
+=======
+import gql from 'graphql-tag';
+>>>>>>> 3b0831f6799c4ee3a95ab85a4e39c903e4a517ae
 
 export const ADD_USER = gql`
 mutation addUser( $username: String!, $password: String!, $email: String! ) {
@@ -32,4 +36,8 @@ mutation loginUser( $email: String!, $password: String! ) {
         }
     }
 }
+<<<<<<< HEAD
 `;
+=======
+`;
+>>>>>>> 3b0831f6799c4ee3a95ab85a4e39c903e4a517ae
