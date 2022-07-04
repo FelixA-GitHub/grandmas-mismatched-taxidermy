@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Signup from '../Signup/index.js';
 import Button from 'react-bootstrap/Button';
+import Avatar from '../../assets/avatar/Grandma.PNG';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import "bootstrap/dist/js/bootstrap.min.js";
 
@@ -18,13 +18,14 @@ function Nav(props) {
 
   return (
     // Navbar
-    <nav className="navbar sticky-top navbar-light bg-light px-3">
+    <nav className="navbar navbar-expand-lg sticky-top px-3">
       {/* Container wrapper */}
       <div className='container-fluid'>
         {/* Navbar brand */}
         <a className="navbar-brand" href="/">
-          make this a logo
+        <img src={Avatar} alt="Rockin Grandma" width="30" height="55" className='avatar'/>
         </a>
+        <h6 className='justify-content-center mt-2'>Grandma's Mismatched Taxidermy</h6>
         {/* Toggle button */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i className="fas fa-bars"></i>
@@ -36,13 +37,13 @@ function Nav(props) {
               <div
                 className={`nav-item nav-link ${currentPage.name === Page.name && 'navActive'}`} key={Page.name}
               >
-                <Button>
+                {/* <Button> */}
                   <span
                     onClick={() => setCurrentPage(Page)}
                   >
                     {capitalizeFirstLetter(Page.name)}
                   </span>
-                </Button>
+                {/* </Button> */}
               </div>
             ))}
           </div>

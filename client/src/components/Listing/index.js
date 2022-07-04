@@ -62,11 +62,11 @@ function Listing() {
 
     return (
 
-        <section className="p-4 bg-Listing">
+        <section className="p-4 bg-listing">
             <div>
                 <Container fluid className="p-0">
-                    <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
-                    <h3 className="text-center margin-top">{capitalizeFirstLetter(currentPage.description)}</h3>
+                    <h1 className="text-center margin-top listing-text">{capitalizeFirstLetter(currentPage.name)}</h1>
+                    <h3 className="text-center margin-top listing-text">{capitalizeFirstLetter(currentPage.description)}</h3>
                     <Row className=''>
 
                         {items.map((item, idx) => (

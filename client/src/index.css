@@ -1,3 +1,7 @@
+html {
+  margin: 0;
+}
+
 
 body {
   margin: 0;
@@ -8,22 +12,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+code, h6 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+
 /* Homepage */
 .hero {
-  background-image: url(../src/assets/cover/cover-image.jpg);
+  background-image: url("https://i.pinimg.com/originals/7d/60/f5/7d60f5bdee4f45baf6bc6c922c91c402.jpg");
   background-size: cover;
   background-position: center;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: right;
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: scroll;
   background-position: 80%;
+}
+
+.hero:hover {
+  background-image: url("https://i.pinimg.com/originals/7d/60/f5/7d60f5bdee4f45baf6bc6c922c91c402.jpg");
+  background-size: 1600px;
+  align-self: stretch;
 }
 
 .hero-cta {
@@ -68,13 +81,13 @@ code {
 .home-title {
   padding-top: 5%;
   color: black;
-  text-shadow: 2px 2px lightgray;
+  text-shadow: 2px 2px lightpink;
   text-align: center;
 }
 
 .home-desc {
   color: white;
-  text-shadow: 2px 2px lightgray;
+  text-shadow: 2px 2px lightpink;
   text-align: right;
   font-style: italic;
   font-weight: bold;
@@ -82,12 +95,112 @@ code {
   margin-bottom: 5rem;
 }
 
+/* Login Area */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.taxidermy4cash.com/stonecoldfox.jpg");
+  background-size: cover;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+/* Signup Area */
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/c7/8c/80/c78c8020e1fada2a7903524a9e21988f.jpg");
+  background-size: cover;
+}
+
+.signup-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  animation: flip; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 /* Nav Area */
-.bg-nav, .bg-footer {
-  background-color: #CAD2C5;
+.navbar {
+  background-color: lightpink;
+}
+
+.footer-bg {
+  background-color: lightpink;
+}
+
+.nav-item {
+  animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  color: black;
+}
+
+.avatar {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.avatar:hover {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: swing; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 /* Listing Area */
+.bg-listing {
+  background-image: url("https://blog-www.pods.com/wp-content/uploads/2021/11/resized_Img04_Getty_price-stickers-garage-sale.jpg");
+  background-size: cover;
+  
+}
+
+.listing-text {
+  color: white;
+  text-shadow: 2px 2px lightpink;
+}
+
 .item-animation {
   display: inline-block;
   margin: 0 0.5rem;
@@ -114,5 +227,31 @@ div .col-md-6 {
   .hero {
     display: flex;
     justify-content: center;
+    background-image: url("https://i.pinimg.com/originals/7d/60/f5/7d60f5bdee4f45baf6bc6c922c91c402.jpg");
+    background-size: auto;
+    pointer-events: none !important;
   }
+
+  /* Login Area */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.taxidermy4cash.com/stonecoldfox.jpg");
+  background-position: center;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+  
 }
