@@ -10,32 +10,9 @@ import {
 function Footer() {
 
   return (
-    <MDBFooter className='bg-light text-center text-white'>
-      {/* <div className='container p-4 pb-0'>
-        <section className='mb-4'> */}
-      {/* <a
-                className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#ac2bac' }}
-                href='https://stackoverflow.com/users/17420314/felix'
-                role='button'
-              >
-                <MDBIcon fab icon='stack-overflow' />
-              </a>
-    
-              <a
-                className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#0082ca' }}
-                href='https://www.linkedin.com/in/felix-acevedo-b7596520a/'
-                role='button'
-              >
-                <MDBIcon fab icon='linkedin-in' />
-              </a> */}
+    <MDBFooter className='footer-bg text-center text-black'>
 
-
-      {/* </section>
-      </div> */}
-
-      <div className='text-center p-4 margin-top' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <div className='text-center p-4 margin-bottom' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         <div>
           <a
             className='btn btn-primary btn-floating m-1'
