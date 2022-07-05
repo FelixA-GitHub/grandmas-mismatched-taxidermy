@@ -43,7 +43,7 @@ const Header = () => {
                     <a className="navbar-brand" href="/">
                         <img src={Avatar} alt="Rockin Grandma" width="30" height="55" className='avatar' />
                     </a>
-                    <h3 className='justify-content-center mt-2 home-desc'>Grandma's Mismatched Taxidermy</h3>
+                    <h3 className='justify-content-center header-title'>Grandma's Mismatched Taxidermy</h3>
                     {/* Toggle button */}
                    
                     {/* Collapsible wrapper */}
