@@ -8,8 +8,6 @@ const typeDefs = gql`
     price: Float
     image: String
     created: String
-     
-
   }
 
   type Comment {
@@ -54,8 +52,6 @@ const typeDefs = gql`
     removeComment(commentId: ID!): Comment
     removeItem(itemId: ID!): Item
     removeUser(userId: ID!): User
-    # edit item
-    # delete comment
   }
 `;
 
