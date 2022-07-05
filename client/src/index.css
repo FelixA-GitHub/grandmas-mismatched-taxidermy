@@ -252,5 +252,15 @@ div .col-md-6 {
   font-size: medium;
 }
 
+/* Nav Area */
+.nav-item.nav-link.bg-info {
+  padding: 10px 8px;
+  
+}
+
+/* .navbar-nav {
+  ;
+} */
+
   
 }

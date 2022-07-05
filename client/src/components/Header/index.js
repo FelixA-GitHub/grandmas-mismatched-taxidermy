@@ -50,11 +50,12 @@ const Header = () => {
                     </button>
                     {/* Collapsible wrapper */}
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <div className="nav nav-pills nav-fill text-info" id="navbarNav">
-                            <div className="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <div className="nav nav-pills nav-fill text-info nav-button-position" id="navbarNav">
+                            <div className="navbar-nav m-0 p-0 mt-lg-0">
                                 {Auth.loggedIn() ? (
                                     <>
                                         <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
+                                        <Link class="nav-item nav-link bg-info" to="/comments">Comments</Link>
                                         <a class="nav-item nav-link bg-info" href="/" onClick={logout}>
                                             Logout
                                         </a>

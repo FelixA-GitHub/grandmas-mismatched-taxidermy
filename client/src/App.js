@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import Signup from './pages/Signup';
 import Listing from './pages/Listing';
+import Comments from './pages/Comments';
 import Footer from './components/Footer';
 // import "../node_modules/jquery/dist/jquery.min.js";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
@@ -47,6 +48,10 @@ function App() {
               <Route
                 path="/listing"
                 element={<Listing />}
+              />
+              <Route
+                path="/comments"
+                element={<Comments />}
               />
               <Route
                 path="/login"
