@@ -1,15 +1,15 @@
 [
     {
-      "name": "Funny Bunny Dress",
-      "description": "Bunny in dress",
+      "name": "Lion King",
+      "description": "Not your typical lion",
       "price": 100.75,
-      "image": "bunny-in-dress.jpg"
+      "image": "https://www.themarysue.com/wp-content/uploads/2011/04/doofy-lion.jpg"
     },
     {
-      "name": "Somewhere Over The Rainbow",
-      "description": "Freaky Kermit the Frog",
+      "name": "A Nightmare on Mouse St",
+      "description": "Mouse in horror icon outfit",
       "price":  200.25,
-      "image": "kermit.jpg"
+      "image": "https://i.etsystatic.com/14340115/r/il/8344d2/3022851849/il_794xN.3022851849_dblw.jpg"
     }
     
   ]

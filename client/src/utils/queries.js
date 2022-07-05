@@ -38,7 +38,7 @@ export const QUERY_ALL_USERS = gql`
 
 export const QUERY_ITEM = gql`
 query item ($itemId: ID!) {
-  item(id: $itemId) {
+  item(itemId: $itemId) {
     _id
     name
     description
