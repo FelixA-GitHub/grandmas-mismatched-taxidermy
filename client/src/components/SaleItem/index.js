@@ -16,12 +16,11 @@ function SaleItem() {
                             <p className="card-text">price</p>
                             <div>
                                 <a href="/">
-                                <i class="fas fa-money-bill-wave-alt"></i>
+                                <i className="fas fa-money-bill-wave-alt"></i>
                                 </a>
                             </div>
 
                         </div>
-                    {/* </div> */}
 
                 </div>
             </div>
