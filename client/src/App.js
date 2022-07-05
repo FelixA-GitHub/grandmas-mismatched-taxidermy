@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'http://localhost:3001/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -27,10 +27,6 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-// const client = new ApolloClient({
-//   uri: '/graphql',
-//   cache: new InMemoryCache(),
-// });
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
@@ -38,17 +34,6 @@ const client = new ApolloClient({
 });
 
 function App() {
-  // const [pages] = useState([
-  //   {
-  //     name: 'home'
-  //   },
-  //   { name: 'listing' },
-  //   { name: 'login'},
-  //   { name: 'signup'}
-  // ]);
-
-  // const [currentPage, setCurrentPage] = useState(pages[0]);
-
 
   return (
     <ApolloProvider client={client}>
@@ -86,18 +71,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-      {/* 
-        <Nav
-          pages={pages}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        ></Nav>
-
-      </Header>
-      <main>
-        <Page currentPage={currentPage}></Page>
-      </main>
-      <Footer /> */}
+     
     </ApolloProvider>
   );
 }
