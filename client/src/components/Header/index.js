@@ -35,7 +35,7 @@ const Header = () => {
                     )}
                 </nav>
             </div> */}
-
+            
             <nav className="navbar navbar-expand-lg sticky-top px-3">
                 {/* Container wrapper */}
                 <div className='container-fluid'>
@@ -54,7 +54,6 @@ const Header = () => {
                             {Auth.loggedIn() ? (
                                 <>
                                     <Link to="/listing">Listing</Link>
-                                    <Link to="/add-item">Add Item</Link>
                                     <a href="/" onClick={logout}>
                                         Logout
                                     </a>
