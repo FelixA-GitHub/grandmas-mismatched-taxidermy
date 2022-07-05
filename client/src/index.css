@@ -243,7 +243,14 @@ div .col-md-6 {
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
-
+.header-title {
+  color: white;
+  text-shadow: 2px 2px grey;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: medium;
+}
 
   
 }
