@@ -28,16 +28,6 @@ mutation login($email: String!, $password: String!) {
     token
     user {
       _id
-      username
-      email
-      password
-      created
-      comments {
-        _id
-        username
-        commentText
-        created
-      }
     }
   }
 }

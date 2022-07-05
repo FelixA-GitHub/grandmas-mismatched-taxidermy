@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'http://localhost:3001/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -27,10 +27,6 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-// const client = new ApolloClient({
-//   uri: '/graphql',
-//   cache: new InMemoryCache(),
-// });
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
@@ -38,18 +34,7 @@ const client = new ApolloClient({
 });
 
 function App() {
-  // const [pages] = useState([
-  //   {
-  //     name: 'home'
-  //   },
-  //   { name: 'listing' },
-  //   { name: 'login'},
-  //   { name: 'signup'}
-  // ]);
-
-  // const [currentPage, setCurrentPage] = useState(pages[0]);
-
-
+ 
   return (
     <ApolloProvider client={client}>
       <Router>
