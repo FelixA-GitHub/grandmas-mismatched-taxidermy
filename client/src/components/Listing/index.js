@@ -25,6 +25,7 @@ const Listing = ({ items, title }) => {
           <img className="card-img-top" alt={item.name} src={item.image}></img>
           <h5 className="card-header">{item.description}</h5>
             <p className="card-header">${item.price}</p>
+            
             <p className="card-header">Added {item.name} on {item.created}</p>
         
                                 <a href="https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy">
