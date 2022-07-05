@@ -1,7 +1,6 @@
 import React from "react";
 // import { removeHyphens, capitalizeFirstLetter } from "../../utils/helpers";
 import 'bootstrap/dist/css/bootstrap.css';
-// import {useParams} from "react-router-dom"
 import { useQuery } from '@apollo/client';
 import { QUERY_ALL_ITEMS } from '../../utils/queries';
 import Listing from "../Listing";
