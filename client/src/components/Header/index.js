@@ -49,7 +49,7 @@ const Header = () => {
                         <i className="fas fa-bars"></i>
                     </button>
                     {/* Collapsible wrapper */}
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <div className="nav nav-pills nav-fill text-info" id="navbarNav">
                             <div className="navbar-nav ms-auto mt-2 mt-lg-0">
                                 {Auth.loggedIn() ? (
