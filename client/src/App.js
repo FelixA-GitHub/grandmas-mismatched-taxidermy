@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -34,7 +34,6 @@ const client = new ApolloClient({
 });
 
 function App() {
- 
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -71,18 +70,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-      {/* 
-        <Nav
-          pages={pages}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        ></Nav>
-
-      </Header>
-      <main>
-        <Page currentPage={currentPage}></Page>
-      </main>
-      <Footer /> */}
+     
     </ApolloProvider>
   );
 }

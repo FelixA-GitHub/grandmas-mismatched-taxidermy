@@ -54,7 +54,7 @@ const Header = () => {
                         <div className="navbar-nav ms-auto mt-2 mt-lg-0">
                             {Auth.loggedIn() ? (
                                 <>
-                                    <Link to="/home">Home</Link>
+                                    <Link to="/listing">Listing</Link>
                                     <a href="/" onClick={logout}>
                                         Logout
                                     </a>
