@@ -44,26 +44,24 @@ const Header = () => {
                     <a className="navbar-brand" href="/">
                         <img src={Avatar} alt="Rockin Grandma" width="30" height="55" className='avatar' />
                     </a>
-                    <h6 className='justify-content-center mt-2'>Grandma's Mismatched Taxidermy</h6>
+                    <h3 className='justify-content-center mt-2 home-desc'>Grandma's Mismatched Taxidermy</h3>
                     {/* Toggle button */}
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i className="fas fa-bars"></i>
-                    </button>
+                   
                     {/* Collapsible wrapper */}
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="nav nav-pills nav-fill text-info" id="navbarNav">
                         <div className="navbar-nav ms-auto mt-2 mt-lg-0">
                             {Auth.loggedIn() ? (
                                 <>
-                                    <Link to="/listing">Listing</Link>
-                                    <a href="/" onClick={logout}>
+                                    <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
+                                    <a class="nav-item nav-link bg-info" href="/" onClick={logout}>
                                         Logout
                                     </a>
                                 </>
                             ) : (
                                 <>
-                                    <Link to="/listing">Listing</Link>
-                                    <Link to="/login">Login</Link>
-                                    <Link to="/signup">Signup</Link>
+                                    <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
+                                    <Link class="nav-item nav-link bg-info" to="/login">Login</Link>
+                                    <Link class="nav-item nav-link bg-info" to="/signup">Signup</Link>
                                 </>
                             )}
                         </div>

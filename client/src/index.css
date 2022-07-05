@@ -36,8 +36,8 @@ code, h6 {
 .hero:hover {
   align-self: stretch;
   transform: scale(1.2);
-  transition: 2s ease-in-out;
-  transition-delay: 2s;
+  transition: .8s ease-in-out;
+  transition-delay: 0s;
 
 }
 
@@ -81,7 +81,6 @@ code, h6 {
   text-align: right;
   font-style: italic;
   font-weight: bold;
-  font-size: larger;
   margin-bottom: 5rem;
 }
 
@@ -90,7 +89,7 @@ code, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url("https://www.taxidermy4cash.com/stonecoldfox.jpg");
   background-size: cover;
@@ -160,8 +159,9 @@ label {
 .nav-item {
   animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
-  color: black;
+  box-shadow: rgb(0 0 0 / 70%) 10px 10px 10px;
 }
+
 
 .avatar {
   display: inline-block;
@@ -243,6 +243,8 @@ div .col-md-6 {
   animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
+
+
 
   
 }

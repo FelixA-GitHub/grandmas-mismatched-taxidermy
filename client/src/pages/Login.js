@@ -34,11 +34,11 @@ const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
+    <main className="flex-row justify-center mb-4 Auth-form-container">
       <div className="col-12 col-md-6">
-        <div className="card">
-          <h4 className="card-header">Login</h4>
-          <div className="card-body">
+        <div className="card Auth-form">
+          <h4 className="card-header Auth-form-title">Login</h4>
+          <div className="card-body Auth-form-content">
             <form onSubmit={handleFormSubmit}>
               <input
                 className="form-input"

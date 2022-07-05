@@ -21,17 +21,7 @@ const Listing = (props) => {
 
   return (
     <div>
-      <div className="card mb-3">
-        <p className="card-header">
-          <span style={{ fontWeight: 700 }} className="text-light">
-            {item.name}
-          </span>{' '}
-          item on {item.created}
-        </p>
-        <div className="card-body">
-          <p>{item.description}</p>
-        </div>
-      </div>
+    
 
       {Auth.loggedIn() && <SaleItem itemId={item._id} />}
     </div>
