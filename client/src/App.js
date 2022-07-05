@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import Signup from './pages/Signup';
-import Listing from './pages/Listing';
+import Listing from './components/Listing';
 import Footer from './components/Footer';
 // import "../node_modules/jquery/dist/jquery.min.js";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
