@@ -35,7 +35,7 @@ const Header = () => {
                     )}
                 </nav>
             </div> */}
-            
+
             <nav className="navbar navbar-expand-lg sticky-top px-3">
                 {/* Container wrapper */}
                 <div className='container-fluid'>
@@ -43,33 +43,37 @@ const Header = () => {
                     <a className="navbar-brand" href="/">
                         <img src={Avatar} alt="Rockin Grandma" width="30" height="55" className='avatar' />
                     </a>
-                    <h3 className='justify-content-center mt-2 home-desc'>Grandma's Mismatched Taxidermy</h3>
+                    <h3 className='justify-content-center header-title'>Grandma's Mismatched Taxidermy</h3>
                     {/* Toggle button */}
-                   
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i className="fas fa-bars"></i>
+                    </button>
                     {/* Collapsible wrapper */}
-                    <div className="nav nav-pills nav-fill text-info" id="navbarNav">
-                        <div className="navbar-nav ms-auto mt-2 mt-lg-0">
-                            {Auth.loggedIn() ? (
-                                <>
-                                    <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
-                                    <a class="nav-item nav-link bg-info" href="/" onClick={logout}>
-                                        Logout
-                                    </a>
-                                </>
-                            ) : (
-                                <>
-                                    <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
-                                    <Link class="nav-item nav-link bg-info" to="/login">Login</Link>
-                                    <Link class="nav-item nav-link bg-info" to="/signup">Signup</Link>
-                                </>
-                            )}
-                        </div>
-                        {/* Right items */}
-                        {/* <div className="d-flex align-items-center">
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <div className="nav nav-pills nav-fill text-info" id="navbarNav">
+                            <div className="navbar-nav ms-auto mt-2 mt-lg-0">
+                                {Auth.loggedIn() ? (
+                                    <>
+                                        <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
+                                        <a class="nav-item nav-link bg-info" href="/" onClick={logout}>
+                                            Logout
+                                        </a>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
+                                        <Link class="nav-item nav-link bg-info" to="/login">Login</Link>
+                                        <Link class="nav-item nav-link bg-info" to="/signup">Signup</Link>
+                                    </>
+                                )}
+                            </div>
+                            {/* Right items */}
+                            {/* <div className="d-flex align-items-center">
             <button type="button" className="btn btn-link px-0 me-2">
               Login
             </button>
           </div> */}
+                        </div>
                     </div>
                 </div>
             </nav>
