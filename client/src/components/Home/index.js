@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import React, { useState } from "react";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 
-function Home() {
+// function Home() {
 
-  const [pages] = useState([
-    {
-      name: "Grandma's Mismatched Taxidermy",
-      description: 'A marketplace for all crap taxidermy lovers'
+//   const [pages] = useState([
+//     {
+//       name: "Grandma's Mismatched Taxidermy",
+//       description: 'A marketplace for all crap taxidermy lovers'
 
-    }
-  ]);
+//     }
+//   ]);
 
-  const [currentPage] = useState(pages[0]);
+//   const [currentPage] = useState(pages[0]);
 
-  return (
+//   return (
    
-    <section className="hero home-title">
-        <div className="hero-cta home-content">
-            <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
-            <p className="home-desc home-text">{currentPage.description}</p>
-        </div>
-    </section>
+//     <section className="hero home-title">
+//         <div className="hero-cta home-content">
+//             <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
+//             <p className="home-desc home-text">{currentPage.description}</p>
+//         </div>
+//     </section>
     
-  );
-}
+//   );
+// }
 
-export default Home;
+// export default Home;
