@@ -20,7 +20,7 @@ const SaleItem = () => {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <Listing items={items} title="Some Feed for Thought(s)..." />
+        <Listing items={items}/>
       )}
     </div>
   </div>

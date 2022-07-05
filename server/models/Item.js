@@ -2,13 +2,13 @@ const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const itemSchema = new Schema({
-    name: {
-        type: String,
-        required: true,
-        trim: true,
-      },
+  name: {
+    type: String,
+    required: true,
+    trim: true,
+  },
 
-    description: {
+  description: {
     type: String,
     required: 'You need to leave an item description!',
     minlength: 1,
@@ -16,7 +16,7 @@ const itemSchema = new Schema({
     trim: true,
   },
 
-   price: {
+  price: {
     type: Number,
     required: true,
     trim: true,
@@ -32,9 +32,9 @@ const itemSchema = new Schema({
     get: (timestamp) => dateFormat(timestamp),
   },
 
- 
+
 },
-  
+
 
 
 );
