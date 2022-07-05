@@ -55,7 +55,6 @@ mutation addComment($commentText: String!, $username: String!, $create: String) 
     created
   }
 }
-
 `;
 
 export const REMOVE_ITEM = gql `
@@ -69,7 +68,6 @@ mutation removeItem($itemId: ID!) {
     created
   }
 }
-
 `;
  
 export const REMOVE_COMMENT = gql `
@@ -81,7 +79,6 @@ mutation removeComment($commentId: ID!) {
     created
   }
 }
-
 `;
 
 export const REMOVE_USER = gql `
@@ -100,5 +97,4 @@ mutation Mutation($userId: ID!) {
     }
   }
 }
-
 `;

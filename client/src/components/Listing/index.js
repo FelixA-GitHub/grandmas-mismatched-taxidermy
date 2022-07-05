@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { capitalizeFirstLetter } from '../../utils/helpers';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -31,7 +31,10 @@ const Listing = ({ items, title }) => {
                                 <a href="https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy">
                                 <i className="fas fa-money-bill-wave-alt"></i>
                                 </a>
-                                
+                            
+            
+              
+              
             
           </div>
           </Col>

@@ -1,3 +1,4 @@
+
 import { gql } from '@apollo/client';
 
 export const QUERY_USER = gql `
@@ -71,7 +72,6 @@ query comment($commentId: ID!) {
     created
   }
 }
-
 `;
 
 export const QUERY_ALL_COMMENTS = gql `
@@ -83,7 +83,6 @@ query comments($username: String) {
     created
   }
 }
-
 `;
 
 
