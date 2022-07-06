@@ -76,64 +76,14 @@
 
 // export default CommentForm;
 
-import React, { useState } from 'react';
-import { useMutation } from '@apollo/client';
-import { ADD_COMMENT } from '../../utils/mutations';
-import { QUERY_ALL_COMMENTS, QUERY_USER } from '../../utils/queries';
+import React from "react";
+// import { removeHyphens, capitalizeFirstLetter } from "../../utils/helpers";
 import 'bootstrap/dist/css/bootstrap.css';
+import { useQuery } from '@apollo/client';
+import { QUERY_ALL_COMMENTS } from '../../utils/queries';
 import CommentList from "../CommentList";
 
 const CommentForm = () => {
-
-    const [commentText, setText] = useState('');
-    const [characterCount, setCharacterCount] = useState(0);
-
-    const [addComment, { error }] = useMutation(ADD_COMMENT, {
-        update(cache, { data: { addComment } }) {
-
-            // could potentially not exist yet, so wrap in a try/catch
-            try {
-                // update me array's cache
-                const { user } = cache.readQuery({ query: QUERY_USER });
-                cache.writeQuery({
-                    query: QUERY_USER,
-                    data: { user: { ...user, comments: [...user.comments, addComment] } },
-                });
-            } catch (e) {
-                console.warn("First comment insertion by user!")
-            }
-
-            // update comment array's cache
-
-            const { comments } = cache.readQuery({ query: QUERY_ALL_COMMENTS });
-            cache.writeQuery({
-                query: QUERY_ALL_COMMENTS,
-                data: { comments: [addComment, ...comments] }
-            });
-        }
-    });
-
-    const handleChange = (event) => {
-        if (event.target.value.length <= 280) {
-            setText(event.target.value);
-            setCharacterCount(event.target.value.length);
-        }
-    };
-
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-
-        try {
-            await addComment({
-                variables: { commentText },
-            });
-            setText('');
-            setCharacterCount(0);
-        }
-        catch (e) {
-            console.error(e);
-        }
-    };
     
 
     const { loading, data } = useQuery(QUERY_ALL_COMMENTS);
