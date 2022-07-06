@@ -246,7 +246,7 @@ label {
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: swing; /* referring directly to the animation's @keyframe declaration */
+  animation: tada; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
@@ -314,7 +314,7 @@ a.stripe {
 
 .btn.btn-primary.btn-floating:hover {
   box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;
-  animation: tada; /* referring directly to the animation's @keyframe declaration */
+  animation: swing; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
