@@ -63,8 +63,8 @@ export const QUERY_ALL_ITEMS = gql`
 `;
 
 export const QUERY_COMMENT = gql `
-query comment($commentId: ID!) {
-  comment(id: $commentId) {
+query comment($id: ID!) {
+  comment(id: $id) {
     _id
     username
     commentText

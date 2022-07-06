@@ -10,8 +10,9 @@ db.once('open', async () => {
     await Item.create(itemSeeds);
   
     await Comment.deleteMany({});
+    await Comment.create(commentSeeds);
+    
     await User.deleteMany({});
-
     await User.create(userSeeds);
 
     for (let i = 0; i < commentSeeds.length; i++) {

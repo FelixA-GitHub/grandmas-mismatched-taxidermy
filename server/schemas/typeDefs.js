@@ -25,7 +25,6 @@ type User {
     created: String
 
   }
-
   
 
   type Auth {
