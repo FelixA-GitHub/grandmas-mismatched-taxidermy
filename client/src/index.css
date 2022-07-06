@@ -134,7 +134,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100vh;
   height: 100vh;
   background-image: url("https://img.wallpapersafari.com/desktop/1536/864/58/14/TcZOS1.jpg");
   background-size: cover;
@@ -281,6 +281,13 @@ label {
 div .col-md-6 {
   display: flex;
   justify-content: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
