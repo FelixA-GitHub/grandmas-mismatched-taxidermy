@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 const dateFormat = require('../utils/dateFormat');
+const Order = require('./Order');
 
 const userSchema = new Schema({
   username: {
@@ -25,6 +26,8 @@ const userSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
+
+  orders: [Order.schema],
   
   comments: [
     {

@@ -98,3 +98,17 @@ mutation Mutation($userId: ID!) {
   }
 }
 `;
+
+export const ADD_ORDER = gql`
+  mutation addOrder($items: [ID]!) {
+    addOrder(items: $items) {
+      purchaseDate
+      items {
+        _id
+        name
+        description
+        price
+      }
+    }
+  }
+`;

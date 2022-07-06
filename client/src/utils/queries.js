@@ -26,6 +26,17 @@ export const QUERY_ALL_USERS = gql`
     email
     password
     created
+    orders {
+        _id
+        purchaseDate
+        items {
+          _id
+          name
+          description
+          price
+          image
+        }
+      }
     comments {
       _id
       username
@@ -60,6 +71,14 @@ export const QUERY_ALL_ITEMS = gql`
     created
   }
 }
+`;
+
+export const QUERY_CHECKOUT = gql`
+  query getCheckout($items: [ID]!) {
+    checkout(items: $items) {
+      session
+    }
+  }
 `;
 
 export const QUERY_COMMENT = gql `
