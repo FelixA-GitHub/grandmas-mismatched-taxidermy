@@ -312,6 +312,12 @@ a.stripe {
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
+.btn.btn-primary.btn-floating:hover {
+  box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;
+  animation: tada; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   .hero {
