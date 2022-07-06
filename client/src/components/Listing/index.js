@@ -19,7 +19,7 @@ const Listing = ({ items, title }) => {
           <Row className=''>
             {items &&
               items.map(item => (
-                <Col md={3}>
+                <Col md={6}>
 
                   <div key={item._id} className="item-animation card p-1 m-4 " style={{ width: "18rem" }} >
                     <img className="card-img-top" alt={item.name} src={item.image}></img>
