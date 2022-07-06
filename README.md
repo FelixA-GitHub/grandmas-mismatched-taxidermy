@@ -39,8 +39,9 @@ Create a marketplace for taxidermy connoisseur looking for a flawed or mismatche
 
 ## GitHub Repository
 https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy
+
 ## Heroku Link
-https://git.heroku.com/infinite-falls-54621.git
+https://infinite-falls-54621.herokuapp.com/
 
 ## Questions 
 For any additional questions, we can be reached at the following
