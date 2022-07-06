@@ -39,7 +39,7 @@ const Signup = () => {
 
   return (
     <main className="flex-row justify-center mb-4 ">
-      <div className="col-12 col-md-6 signup-form-container">
+      <div className="vw-100 signup-form-container">
         <div className="signup-form p-4">
           <h4 className="card-header Auth-form-title signup">Sign Up</h4>
           <div className="card-body">

@@ -134,7 +134,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100vh;
   height: 100vh;
   background-image: url("https://img.wallpapersafari.com/desktop/1536/864/58/14/TcZOS1.jpg");
   background-size: cover;
@@ -228,6 +228,11 @@ label {
   box-shadow: rgb(0 0 0 / 70%) 10px 10px 10px;
 }
 
+.nav-item.nav-link.bg-info {
+  background-color: rgb(93, 170, 93) !important;
+  
+}
+
 
 .avatar {
   display: inline-block;
@@ -241,7 +246,7 @@ label {
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: swing; /* referring directly to the animation's @keyframe declaration */
+  animation: tada; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
@@ -249,6 +254,7 @@ label {
 .bg-listing {
   background-image: url("https://blog-www.pods.com/wp-content/uploads/2021/11/resized_Img04_Getty_price-stickers-garage-sale.jpg");
   background-size: cover;
+
   
 }
 
@@ -276,6 +282,40 @@ label {
 div .col-md-6 {
   display: flex;
   justify-content: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+
+}
+
+a.stripe {
+  text-decoration: none;
+  color: rgb(93, 170, 93);
+  padding-top: 4px;
+  margin-left: 18%;
+  animation: jello; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.zebra:hover {
+  animation: hinge; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* Footer Area */
+.btn.btn-primary.btn-floating {
+  box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;
+  animation: rollIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.btn.btn-primary.btn-floating:hover {
+  box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;
+  animation: swing; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -325,9 +365,13 @@ div .col-md-6 {
   
 }
 
-/* .navbar-nav {
-  ;
-} */
+/* Listing Area */
+.card-img-top {
+  width: 100%;
+  height: 45vw;
+  object-fit: cover;
 
-  
+}
+
+
 }

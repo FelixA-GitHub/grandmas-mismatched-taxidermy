@@ -19,17 +19,18 @@ const Listing = ({ items, title }) => {
           <Row className=''>
             {items &&
               items.map(item => (
-                <Col md={3}>
+                <Col md={6}>
 
                   <div key={item._id} className="item-animation card p-1 m-4 " style={{ width: "18rem" }} >
                     <img className="card-img-top" alt={item.name} src={item.image}></img>
                     <h5 className="card-header">{item.description}</h5>
                     <p className="card-header">${item.price}</p>
 
-                    <p className="card-header">Added {item.name} on {item.created}</p>
+                    <p className="card-header">Added: {item.name} on {item.created}</p>
 
-                    <a href="https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy">
-                      <i className="fas fa-money-bill-wave-alt"></i>
+                    <a className="stripe" href="https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy">
+                    <img src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" data-src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" alt="Zebra " title="Zebra " width="34" height="34" class="zebra" srcset="https://cdn-icons-png.flaticon.com/128/7211/7211987.png 4x"/>
+                    {' '}Stripe Me Daddy
                     </a>
 
 
