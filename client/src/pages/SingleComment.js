@@ -28,7 +28,7 @@ const SingleComment = (props) => {
                     <p className="card-header">
                         <span style={{ fontWeight: 700 }} className="text-light">
                             {comment.username}
-                        </span>{' '}
+                        </span>
                         comment on {comment.created}
                     </p>
                     <div className="card-body">

@@ -13,7 +13,7 @@ const CommentList = ({ comments, title }) => {
       {comments &&
         comments.map(comment => (
           <div key={comment._id} className="card mb-3">
-            <p className="card-header">
+            <div className="card-header">
               <Link
                 to={`/comment/${comment.username}`}
                 style={{ fontWeight: 700 }}
@@ -22,7 +22,7 @@ const CommentList = ({ comments, title }) => {
                 <p className='comment-author'>{comment.username}</p>
               </Link>
               comment on {comment.created}
-            </p>
+            </div>
             <div className="card-body">
               <Link to={`/comment/${comment._id}`}>
                 <p>{comment.commentText}</p>
