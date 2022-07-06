@@ -20,7 +20,7 @@ const CommentList = ({ comments, title }) => {
                 className="text-light"
               >
                 {comment.username}
-              </Link>{' '}
+              </Link>
               comment on {comment.created}
             </p>
             <div className="card-body">
@@ -32,7 +32,7 @@ const CommentList = ({ comments, title }) => {
                 </p> */}
               </Link>
             </div>
-            <Button className="btn d-block w-100 draw-border" type="submit">Button</Button>
+            <Link className="nav-item nav-link bg-info w-100 draw-border comment-button comment-btn-font" to="/comment/:id">Comment</Link>
           </div>
         ))}
     </div>
