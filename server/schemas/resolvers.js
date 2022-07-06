@@ -22,8 +22,12 @@ const resolvers = {
       return Item.find();
     },
     comment: async (parent, { _id }) => {
-      return Comment.findOne({ _id });
+      const params = _id ? { _id } : {};
+      return Comment.findOne(params);
     },
+    // comment: async (parent, { _id }) => {
+    //   return Comment.findOne({ _id });
+    // },
     comments: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Comment.find(params).sort({ created: -1 });
