@@ -20,7 +20,7 @@ const CommentList = ({ comments, title }) => {
               >
                 {comment.username}
               </Link>{' '}
-              comment on {comment.createdAt}
+              comment on {comment.created}
             </p>
             <div className="card-body">
               <Link to={`/comment/${comment._id}`}>
