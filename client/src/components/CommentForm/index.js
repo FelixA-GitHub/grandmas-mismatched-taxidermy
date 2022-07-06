@@ -16,7 +16,7 @@ const CommentForm = () => {
                 const { user } = cache.readQuery({ query: QUERY_USER });
                 cache.writeQuery({
                     query: QUERY_USER,
-                    data: { user: { ...user, comments: [...me.comments, addComment] } },
+                    data: { user: { ...user, comments: [...user.comments, addComment] } },
                 });
             } catch (e) {
                 console.warn("First comment insertion by user!")

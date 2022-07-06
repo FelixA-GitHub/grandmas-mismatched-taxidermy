@@ -47,8 +47,8 @@ export const ADD_ITEM = gql`
 `;
 
 export const ADD_COMMENT = gql`
-mutation addComment($commentText: String!, $username: String!, $create: String) {
-  addComment(commentText: $commentText, username: $username, create: $create) {
+mutation addComment($commentText: String!) {
+  addComment(commentText: $commentText) {
     _id
     username
     commentText
