@@ -14,7 +14,7 @@ const CommentList = ({ comments, title }) => {
           <div key={comment._id} className="card mb-3">
             <p className="card-header">
               <Link
-                to={`/profile/${comment.username}`}
+                to={`/comment/${comment.username}`}
                 style={{ fontWeight: 700 }}
                 className="text-light"
               >
@@ -25,10 +25,10 @@ const CommentList = ({ comments, title }) => {
             <div className="card-body">
               <Link to={`/comment/${comment._id}`}>
                 <p>{comment.commentText}</p>
-                <p className="mb-0">
+                {/* <p className="mb-0">
                   Reactions: {comment.reactionCount} || Click to{' '}
                   {comment.reactionCount ? 'see' : 'start'} the discussion!
-                </p>
+                </p> */}
               </Link>
             </div>
           </div>

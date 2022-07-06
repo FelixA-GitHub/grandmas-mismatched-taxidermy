@@ -9,6 +9,7 @@ import NoMatch from './pages/NoMatch';
 import Signup from './pages/Signup';
 import Listing from './pages/Listing';
 import Comment from './pages/Comment';
+import SingleComment from './pages/SingleComment';
 import Footer from './components/Footer';
 // import "../node_modules/jquery/dist/jquery.min.js";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
@@ -46,6 +47,14 @@ function App() {
                 element={<Home />}
               />
               <Route
+                path="/login"
+                element={<Login />}
+              />
+              <Route
+                path="/signup"
+                element={<Signup />}
+              />
+              <Route
                 path="/listing"
                 element={<Listing />}
               />
@@ -54,17 +63,9 @@ function App() {
                 element={<Comment />}
               />
               <Route
-                path="/login"
-                element={<Login />}
+                path="/comment/:id"
+                element={<SingleComment />}
               />
-              <Route
-                path="/signup"
-                element={<Signup />}
-              />
-              {/* <Route 
-                path="/thought/:id" 
-                element={<SingleThought />} 
-              /> */}
               <Route
                 path="*"
                 element={<NoMatch />}
@@ -74,7 +75,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-     
+
     </ApolloProvider>
   );
 }
