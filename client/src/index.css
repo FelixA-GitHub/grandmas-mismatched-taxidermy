@@ -305,6 +305,12 @@ a.stripe {
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
+/* Comments Area */
+/* main div.col-md-6.col-lg-12.mb-3 {
+  background-image: url("https://blog-www.pods.com/wp-content/uploads/2021/11/resized_Img04_Getty_price-stickers-garage-sale.jpg");
+  background-size: cover;
+} */
+
 /* Footer Area */
 .btn.btn-primary.btn-floating {
   box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;

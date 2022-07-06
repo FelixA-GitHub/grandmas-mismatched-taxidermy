@@ -53,7 +53,7 @@ const Comment = (props) => {
   }
 
   return (
-    <div>
+    <div >
       <CommentForm commentId={comment._id} />
     </div>
   );

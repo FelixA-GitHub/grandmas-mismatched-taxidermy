@@ -8,7 +8,7 @@ const CommentList = ({ comments, title }) => {
   }
 
   return (
-    <div>
+    <div className=''>
       <h3>{title}</h3>
       {comments &&
         comments.map(comment => (
