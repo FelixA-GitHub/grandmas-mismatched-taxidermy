@@ -228,6 +228,11 @@ label {
   box-shadow: rgb(0 0 0 / 70%) 10px 10px 10px;
 }
 
+.nav-item.nav-link.bg-info {
+  background-color: rgb(93, 170, 93) !important;
+  
+}
+
 
 .avatar {
   display: inline-block;
