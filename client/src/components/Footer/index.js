@@ -10,7 +10,7 @@ import {
 function Footer() {
 
   return (
-    <MDBFooter className='footer-bg text-center text-black'>
+    <MDBFooter className='sticky-bottom footer-bg text-center text-black'>
 
       <div className='text-center p-4 margin-bottom' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         <div>
@@ -22,10 +22,11 @@ function Footer() {
           >
             <MDBIcon fab icon='github' />
           </a>
+          {' '}© 2022 Felix Acevedo, Ryan Uhl, Ryanne Bennett, Joseph Shaw
         </div>
-        <div className='mt-2'>
+        {/* <div className='mt-2'>
           © 2022 Felix Acevedo, Ryan Uhl, Ryanne Bennett, Joseph Shaw
-        </div>
+        </div> */}
       </div>
 
     </MDBFooter>

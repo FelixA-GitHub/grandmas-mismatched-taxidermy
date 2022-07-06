@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import SaleItem from '../components/SaleItem';
 
-import Auth from '../utils/auth';
+// import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
 import { QUERY_ITEM } from '../utils/queries';
 
@@ -21,9 +21,7 @@ const Listing = (props) => {
 
   return (
     <div>
-    
-
-      {Auth.loggedIn() && <SaleItem itemId={item._id} />}
+      <SaleItem itemId={item._id} />
     </div>
   );
 };
