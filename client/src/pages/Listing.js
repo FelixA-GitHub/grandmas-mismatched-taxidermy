@@ -21,9 +21,7 @@ const Listing = (props) => {
 
   return (
     <div>
-    
-
-      {Auth.loggedIn() && <SaleItem itemId={item._id} />}
+      <SaleItem itemId={item._id} />
     </div>
   );
 };
