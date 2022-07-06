@@ -26,10 +26,11 @@ const Listing = ({ items, title }) => {
                     <h5 className="card-header">{item.description}</h5>
                     <p className="card-header">${item.price}</p>
 
-                    <p className="card-header">Added {item.name} on {item.created}</p>
+                    <p className="card-header">Added: {item.name} on {item.created}</p>
 
-                    <a href="https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy">
-                      <i className="fas fa-money-bill-wave-alt"></i>
+                    <a className="stripe" href="https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy">
+                    <img src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" data-src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" alt="Zebra " title="Zebra " width="34" height="34" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/7211/7211987.png 4x"/>
+                    {' '}Stripe Me Daddy
                     </a>
 
 
