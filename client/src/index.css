@@ -328,6 +328,10 @@ p.card-header {
   text-align: right;
 }
 
+.comment-author {
+  color: black;
+}
+
 /* Footer Area */
 .btn.btn-primary.btn-floating {
   box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;

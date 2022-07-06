@@ -19,7 +19,7 @@ const CommentList = ({ comments, title }) => {
                 style={{ fontWeight: 700 }}
                 className="text-light"
               >
-                {comment.username}
+                <p className='comment-author'>{comment.username}</p>
               </Link>
               comment on {comment.created}
             </p>
