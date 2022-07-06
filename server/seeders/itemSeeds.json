@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Lion King",
+      "description": "Not your typical lion",
+      "price": 100.75,
+      "image": "https://www.themarysue.com/wp-content/uploads/2011/04/doofy-lion.jpg"
+    },
+    {
+      "name": "A Nightmare on Mouse St",
+      "description": "Mouse in horror icon outfit",
+      "price":  200.25,
+      "image": "https://i.etsystatic.com/14340115/r/il/8344d2/3022851849/il_794xN.3022851849_dblw.jpg"
+    },
+    {
+      "name": "The Bear Necessities",
+      "description": "Bear with some crazy eyes",
+      "price":  175.25,
+      "image": "https://taxidermy.blog/wp-content/uploads/2021/02/image-110.jpg"
+    },
+    {
+      "name": "Rumble In The Concrete Jungle",
+      "description": "DOWN GOES FRAZIER!!!",
+      "price": 120.75,
+      "image": "https://64.media.tumblr.com/26946065a98b2863bb36faab3d65964b/tumblr_ncm54iVbPK1qze1jro2_1280.jpg"
+    },
+    {
+      "name": "Not-So-Human-Centipede",
+      "description": "Ratipede",
+      "price":  185.50,
+      "image": "https://64.media.tumblr.com/7edf154864dd1a902b47449465811484/tumblr_ncb52fmPbd1qze1jro2_r2_640.jpg"
+    },
+    {
+      "name": "4th of July Cookout",
+      "description": "Too much lighter fluid!",
+      "price":  175.25,
+      "image": "https://64.media.tumblr.com/910503ba07f25f1821620c1394a5aac4/tumblr_nc80gqZnSt1qze1jro1_1280.jpg"
+    }
+  ]

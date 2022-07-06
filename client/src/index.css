@@ -1,0 +1,410 @@
+html {
+  margin: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code, h6 {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Homepage */
+.hero {
+  background-image: url("https://i.pinimg.com/originals/7d/60/f5/7d60f5bdee4f45baf6bc6c922c91c402.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: scroll;
+  background-position: 80%;
+}
+
+.hero:hover {
+  align-self: stretch;
+  transform: scale(1.2);
+  transition: .8s ease-in-out;
+  transition-delay: 0s;
+
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: var(--primary-color);
+}
+
+
+/* Home Area */
+
+.home-example {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  display: block;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+.home-title {
+  padding-top: 5%;
+  color: black;
+  text-shadow: 2px 2px lightpink;
+  text-align: center;
+}
+
+.header-title {
+  color: white;
+  text-shadow: 2px 2px grey;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Login Area */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/40389431_1068702733279662_4155024823271030784_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=f3sAOWkdgZQAX96Wztm&_nc_ht=scontent-iad3-2.xx&oh=00_AT_L0-vmEYiGm1o0k8Fk2RFxUuCfaaln4pAYYsBL24jmPQ&oe=62EB2D2E");
+  background-size: cover;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+.Auth-form-title.signup {
+  background-color: white;
+  border-style: hidden;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+/* Signup Area */
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+  background-image: url("https://img.wallpapersafari.com/desktop/1536/864/58/14/TcZOS1.jpg");
+  background-size: cover;
+}
+
+.signup-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  animation: flip; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.btn.draw-border {
+  background-color: lightpink;
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: lightcoral;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+}
+
+/* Nav Area */
+.navbar {
+  background-color: lightpink;
+}
+
+.footer-bg {
+  background-color: lightpink;
+}
+
+.nav-item {
+  animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  box-shadow: rgb(0 0 0 / 70%) 10px 10px 10px;
+}
+
+.nav-item.nav-link.bg-info {
+  background-color: rgb(93, 170, 93) !important;
+  
+}
+
+
+.avatar {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.avatar:hover {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: tada; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* Listing Area */
+.bg-listing {
+  background-image: url("https://blog-www.pods.com/wp-content/uploads/2021/11/resized_Img04_Getty_price-stickers-garage-sale.jpg");
+  background-size: cover;
+
+  
+}
+
+.listing-text {
+  color: white;
+  text-shadow: 2px 2px lightpink;
+}
+
+.item-animation {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.item-animation:hover {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: headShake; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+div .col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+
+}
+
+a.stripe {
+  text-decoration: none;
+  color: rgb(93, 170, 93);
+  padding-top: 4px;
+  margin-left: 18%;
+  animation: jello; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.zebra:hover {
+  animation: hinge; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* Comments Area */
+
+div.flex-row.justify-content-center {
+  background-image: url("https://64.media.tumblr.com/abe58fee8a5c68c3dcc352c88859f8ed/tumblr_ncsojs4BT11qze1jro1_1280.jpg");
+  background-size: cover;
+}
+
+.comment-button {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  
+}
+
+a.comment-btn-font {
+  color: white;
+  text-shadow: 2px 2px grey;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.card-body a p {
+  color: black;
+  text-align: center;
+}
+
+div.card-header {
+  text-align: right;
+}
+
+.comment-author {
+  color: black;
+}
+
+/* Footer Area */
+.btn.btn-primary.btn-floating {
+  box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;
+  animation: rollIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.btn.btn-primary.btn-floating:hover {
+  box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;
+  animation: swing; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://i.pinimg.com/originals/7d/60/f5/7d60f5bdee4f45baf6bc6c922c91c402.jpg");
+    background-size: auto;
+    pointer-events: none !important;
+  }
+
+  /* Login Area */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.taxidermy4cash.com/stonecoldfox.jpg");
+  background-position: center;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.header-title {
+  color: white;
+  text-shadow: 2px 2px grey;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* Nav Area */
+.nav-item.nav-link.bg-info {
+  padding: 10px 8px;
+  
+}
+
+/* Listing Area */
+.card-img-top {
+  width: 100%;
+  height: 45vw;
+  object-fit: cover;
+
+}
+
+
+}
