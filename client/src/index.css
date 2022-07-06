@@ -34,9 +34,11 @@ code, h6 {
 }
 
 .hero:hover {
-  background-image: url("https://i.pinimg.com/originals/7d/60/f5/7d60f5bdee4f45baf6bc6c922c91c402.jpg");
-  background-size: 1600px;
   align-self: stretch;
+  transform: scale(1.2);
+  transition: .8s ease-in-out;
+  transition-delay: 0s;
+
 }
 
 .hero-cta {
@@ -66,18 +68,6 @@ code, h6 {
   overflow: hidden;
 }
 
-.about-content {
-  opacity: 0%;
-  font-size: 18px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #1c87c9;
-  width: 100%;
-  height: 100%;
-}
-
-
 .home-title {
   padding-top: 5%;
   color: black;
@@ -85,14 +75,12 @@ code, h6 {
   text-align: center;
 }
 
-.home-desc {
+.header-title {
   color: white;
-  text-shadow: 2px 2px lightpink;
+  text-shadow: 2px 2px grey;
   text-align: right;
   font-style: italic;
   font-weight: bold;
-  font-size: larger;
-  margin-bottom: 5rem;
 }
 
 /* Login Area */
@@ -100,9 +88,9 @@ code, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-image: url("https://www.taxidermy4cash.com/stonecoldfox.jpg");
+  background-image: url("https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/40389431_1068702733279662_4155024823271030784_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=f3sAOWkdgZQAX96Wztm&_nc_ht=scontent-iad3-2.xx&oh=00_AT_L0-vmEYiGm1o0k8Fk2RFxUuCfaaln4pAYYsBL24jmPQ&oe=62EB2D2E");
   background-size: cover;
 }
 
@@ -143,7 +131,7 @@ label {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url("https://i.pinimg.com/originals/c7/8c/80/c78c8020e1fada2a7903524a9e21988f.jpg");
+  background-image: url("https://img.wallpapersafari.com/desktop/1536/864/58/14/TcZOS1.jpg");
   background-size: cover;
 }
 
@@ -170,8 +158,9 @@ label {
 .nav-item {
   animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
-  color: black;
+  box-shadow: rgb(0 0 0 / 70%) 10px 10px 10px;
 }
+
 
 .avatar {
   display: inline-block;
@@ -253,5 +242,25 @@ div .col-md-6 {
   animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
+
+.header-title {
+  color: white;
+  text-shadow: 2px 2px grey;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: medium;
+}
+
+/* Nav Area */
+.nav-item.nav-link.bg-info {
+  padding: 10px 8px;
+  
+}
+
+/* .navbar-nav {
+  ;
+} */
+
   
 }

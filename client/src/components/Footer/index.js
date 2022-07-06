@@ -15,7 +15,7 @@ function Footer() {
       <div className='text-center p-4 margin-bottom' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         <div>
           <a
-            className='btn btn-primary btn-floating m-1'
+            className='btn btn-primary btn-floating'
             style={{ backgroundColor: '#4287f5' }}
             href='https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy.git'
             role='button'

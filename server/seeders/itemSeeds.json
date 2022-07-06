@@ -1,8 +1,20 @@
 [
     {
-      "name": "Freaky Frog",
-      "description": "Freaky Kermitt the Frog",
-      "price": "14.95"
+      "name": "Lion King",
+      "description": "Not your typical lion",
+      "price": 100.75,
+      "image": "https://www.themarysue.com/wp-content/uploads/2011/04/doofy-lion.jpg"
+    },
+    {
+      "name": "A Nightmare on Mouse St",
+      "description": "Mouse in horror icon outfit",
+      "price":  200.25,
+      "image": "https://i.etsystatic.com/14340115/r/il/8344d2/3022851849/il_794xN.3022851849_dblw.jpg"
+    },
+    {
+      "name": "The Bear Necessities",
+      "description": "Bear with some crazy eyes",
+      "price":  175.25,
+      "image": "https://taxidermy.blog/wp-content/uploads/2021/02/image-110.jpg"
     }
-
   ]
