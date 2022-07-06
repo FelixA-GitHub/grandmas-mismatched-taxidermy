@@ -84,7 +84,7 @@ import { QUERY_ALL_COMMENTS } from '../../utils/queries';
 import CommentList from "../CommentList";
 
 const CommentForm = () => {
-    
+
 
     const { loading, data } = useQuery(QUERY_ALL_COMMENTS);
 
@@ -93,16 +93,16 @@ const CommentForm = () => {
 
     return (
         <main>
-  <div className="flex-row justify-space-between">
-    <div className="col-12 mb-3">
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <CommentList comments={comments}/>
-      )}
-    </div>
-  </div>
-</main>
+            <div className="flex-row justify-content-center">
+                <div className="col-md-6 col-lg-12 mb-3">
+                    {loading ? (
+                        <div>Loading...</div>
+                    ) : (
+                        <CommentList comments={comments} />
+                    )}
+                </div>
+            </div>
+        </main>
 
     );
 };

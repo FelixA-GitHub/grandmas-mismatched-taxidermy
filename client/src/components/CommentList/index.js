@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const CommentList = ({ comments, title }) => {
@@ -31,6 +32,7 @@ const CommentList = ({ comments, title }) => {
                 </p> */}
               </Link>
             </div>
+            <Button className="btn d-block w-100 draw-border" type="submit">Button</Button>
           </div>
         ))}
     </div>
