@@ -54,17 +54,17 @@ const Header = () => {
                             <div className="navbar-nav m-0 p-0 mt-lg-0">
                                 {Auth.loggedIn() ? (
                                     <>
-                                        <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
-                                        <Link class="nav-item nav-link bg-info" to="/comments">Comments</Link>
-                                        <a class="nav-item nav-link bg-info" href="/" onClick={logout}>
+                                        <Link className="nav-item nav-link bg-info" to="/listing">Listing</Link>
+                                        <Link className="nav-item nav-link bg-info" to="/comment">Comments</Link>
+                                        <a className="nav-item nav-link bg-info" href="/" onClick={logout}>
                                             Logout
                                         </a>
                                     </>
                                 ) : (
                                     <>
-                                        <Link class="nav-item nav-link bg-info" to="/listing">Listing</Link>
-                                        <Link class="nav-item nav-link bg-info" to="/login">Login</Link>
-                                        <Link class="nav-item nav-link bg-info" to="/signup">Signup</Link>
+                                        <Link className="nav-item nav-link bg-info" to="/listing">Listing</Link>
+                                        <Link className="nav-item nav-link bg-info" to="/login">Login</Link>
+                                        <Link className="nav-item nav-link bg-info" to="/signup">Signup</Link>
                                     </>
                                 )}
                             </div>

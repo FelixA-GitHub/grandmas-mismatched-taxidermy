@@ -2,11 +2,11 @@ const { Schema, model, Types } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const commentSchema = new Schema({
-  commentId: {
-type: Schema.Types.ObjectId,
-default: () => new Types.ObjectId()
+  // commentId: {
+  //   type: Schema.Types.ObjectId,
+  //   default: () => new Types.ObjectId()
 
-  },
+  // },
 
   username: {
     type: String,

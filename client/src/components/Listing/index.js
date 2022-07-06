@@ -29,7 +29,7 @@ const Listing = ({ items, title }) => {
                     <p className="card-header">Added: {item.name} on {item.created}</p>
 
                     <a className="stripe" href="https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy">
-                    <img src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" data-src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" alt="Zebra " title="Zebra " width="34" height="34" class="zebra" srcset="https://cdn-icons-png.flaticon.com/128/7211/7211987.png 4x"/>
+                    <img src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" data-src="https://cdn-icons-png.flaticon.com/128/7211/7211987.png" alt="Zebra " title="Zebra " width="34" height="34" class="zebra" srcSet="https://cdn-icons-png.flaticon.com/128/7211/7211987.png 4x"/>
                     {' '}Stripe Me Daddy
                     </a>
 
