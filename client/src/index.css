@@ -293,6 +293,8 @@ div .col-md-6 {
 .stripe {
   text-decoration: none;
   color: rgb(93, 170, 93);
+  padding-top: 4px;
+  margin-left: 18%;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
