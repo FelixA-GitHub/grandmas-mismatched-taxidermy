@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/taxidermy-app', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Grandmas-Mismatched-Taxidermy', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
