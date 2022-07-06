@@ -291,16 +291,23 @@ div .col-md-6 {
 
 }
 
-.stripe {
+a.stripe {
   text-decoration: none;
   color: rgb(93, 170, 93);
   padding-top: 4px;
   margin-left: 18%;
+  animation: jello; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.zebra:hover {
+  animation: hinge; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 /* Footer Area */
 .btn.btn-primary.btn-floating {
-  
+  box-shadow: rgb(0 0 0 / 70%) 5px 5px 5px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
