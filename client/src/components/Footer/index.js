@@ -22,10 +22,11 @@ function Footer() {
           >
             <MDBIcon fab icon='github' />
           </a>
+          {' '}© 2022 Felix Acevedo, Ryan Uhl, Ryanne Bennett, Joseph Shaw
         </div>
-        <div className='mt-2'>
+        {/* <div className='mt-2'>
           © 2022 Felix Acevedo, Ryan Uhl, Ryanne Bennett, Joseph Shaw
-        </div>
+        </div> */}
       </div>
 
     </MDBFooter>

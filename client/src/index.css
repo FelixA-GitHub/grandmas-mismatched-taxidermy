@@ -297,6 +297,12 @@ div .col-md-6 {
   padding-top: 4px;
   margin-left: 18%;
 }
+
+/* Footer Area */
+.btn.btn-primary.btn-floating {
+  
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   .hero {
