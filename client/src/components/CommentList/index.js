@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Comments = ({ comments, title }) => {
+const CommentList = ({ comments, title }) => {
   if (!comments.length) {
     return <h3>No Comments Yet</h3>;
   }
@@ -22,10 +22,19 @@ const Comments = ({ comments, title }) => {
               </Link>{' '}
               comment on {comment.createdAt}
             </p>
+            <div className="card-body">
+              <Link to={`/comment/${comment._id}`}>
+                <p>{comment.commentText}</p>
+                <p className="mb-0">
+                  Reactions: {comment.reactionCount} || Click to{' '}
+                  {comment.reactionCount ? 'see' : 'start'} the discussion!
+                </p>
+              </Link>
+            </div>
           </div>
         ))}
     </div>
   );
 };
 
-export default Comments;
+export default CommentList;
