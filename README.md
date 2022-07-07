@@ -3,6 +3,7 @@
 - [Purpose](#purpose)
 - [Website Functionality](#website-functionality)
 - [Built With](#built-with)
+- [Installation](#installation)
 - [Usage](#usage)
 - [GitHub Repository](#github-repository)
 - [Questions](#questions)
@@ -32,6 +33,12 @@
 * React-Bootstrap
 * GraphQL 
 * Mongoose ORM 
+```
+## Installation
+```
+* NPM I (Main, Client, and Server)
+* NPM RUN SEED
+* NPM RUN DEV
 ```
 ## Usage
 ![screenshot of Active Site, Homepage](./client/src/assets/screenshot/Homepage.png)
