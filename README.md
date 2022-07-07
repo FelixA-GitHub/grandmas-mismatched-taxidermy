@@ -3,6 +3,7 @@
 - [Purpose](#purpose)
 - [Website Functionality](#website-functionality)
 - [Built With](#built-with)
+- [Installation](#installation)
 - [Usage](#usage)
 - [GitHub Repository](#github-repository)
 - [Questions](#questions)
@@ -33,6 +34,12 @@
 * GraphQL 
 * Mongoose ORM 
 ```
+## Installation
+```
+* NPM I (Main, Client, and Server)
+* NPM RUN SEED
+* NPM RUN DEV
+```
 ## Usage
 ![screenshot of Active Site, Homepage](./client/src/assets/screenshot/Homepage.png)
 
@@ -49,17 +56,28 @@ https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy
 https://infinite-falls-54621.herokuapp.com/
 
 ## Questions 
-For any additional questions, we can be reached at the following
-* Ryan Muhl: ryanmuhl@hotmail.com
-* Felix Acevedo: Felix.Acevedo.Tech@gmail.com
-* David Shaw: hawkhilt@gmail.com
-* Ryanne Bennett: ryannebennett1@outlook.com
+For any additional questions, we can be reached at the following:
+
+Ryan Muhl 
+- GitHub: ryanmuhl@hotmail.com
+- Portfolio: https://ryanmuhl.github.io/my-react-portfolio/
+
+Felix Acevedo
+- GitHub: Felix.Acevedo.Tech@gmail.com
+- Portfolio: https://felixa-github.github.io/Fizzy-React-Portfolio/
+
+David Shaw
+- GitHub: hawkhilt@gmail.com
+- Portfolio: https://obtains.github.io/My-Portfolio/
+
+Ryanne Bennett
+- GitHub: ryannebennett1@outlook.com
+- Portfolio: https://rbenne30.github.io/BennettPortfolio/
 
 ## Contributions 
 If you make any changes test on a local branch before pushing to main. 
 
 ## License
-
 [view license link here](https://choosealicense.com/licenses/mit/)
 
         
