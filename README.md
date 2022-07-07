@@ -7,10 +7,13 @@
 - [GitHub Repository](#github-repository)
 - [Questions](#questions)
 - [Contributions](#contributions)
+
 ## Purpose
-Create a marketplace for taxidermy connoisseur looking for a flawed or mismatched taxidermy products to add to their collections. 
+```
+* Create a marketplace for taxidermy connoisseur looking for a flawed or mismatched taxidermy products to add to their collections. 
+```
 ## Website Functionality
-* When Application is loaded,  User is presented with a homepage that imedately draws them into the world of Taxidremy. 
+```* When Application is loaded,  User is presented with a homepage that imedately draws them into the world of Taxidremy. 
 * When the user view's the header,  the user is then presented with the logo, application name, and solgan plus navigation with titles corresponding to different sections of the website.
 * When the user views the navigation titles,  the user is then presented with titles including Home, Listing, login, and Signup.  
 * When a user selects a tab/button,  they are presented with the corresponding section below the navigation without the page reloading and that title is highlighted.
@@ -22,12 +25,14 @@ Create a marketplace for taxidermy connoisseur looking for a flawed or mismatche
 * When the user is presented with the Signup section,  the user will see a form with fields for Username, Email, and Password, the user must then hit submit.
 * When the user wants to return to the homepage they simply click on the grandma picture/icon. 
 * When the user is presented with a footer,  the footer contains links to the developer's Github and alternate personal sites.
+```
 ## Built With
-* React
+```* React
 * CSS
 * React-Bootstrap
 * GraphQL 
 * Mongoose ORM 
+```
 ## Usage
 ![screenshot of Active Site, Homepage](./client/src/assets/screenshot/Homepage.png)
 
