@@ -3,9 +3,9 @@
 - [Purpose](#purpose)
 - [Website Functionality](#website-functionality)
 - [Built With](#built-with)
-- [Usage](#Usage)
+- [Usage](#usage)
 - [GitHub Repository](#github-repository)
-- [Quetions](#questions)
+- [Questions](#questions)
 - [Contributions](#contributions)
 ## Purpose
 Create a marketplace for taxidermy connoisseur looking for a flawed or mismatched taxidermy products to add to their collections. 
@@ -29,13 +29,13 @@ Create a marketplace for taxidermy connoisseur looking for a flawed or mismatche
 * GraphQL 
 * Mongoose ORM 
 ## Usage
-! [screenshot of Active Site, Homepage](/Grandmas-Mismatched-Taxidermy/client/src/assets/screenshot/Homepage.png)
+![screenshot of Active Site, Homepage](./client/src/assets/screenshot/Homepage.png)
 
-! [screenshot of Active Site, Listing](Grandmas-Mismatched-Taxidermy/client/src/assets/screenshot/Listing.png)
+![screenshot of Active Site, Listing](./client/src/assets/screenshot/Listing.png)
 
-! [screenshot of Active Site, Login](Grandmas-Mismatched-Taxidermy/client/src/assets/screenshot/Login.png)
+![screenshot of Active Site, Login](./client/src/assets/screenshot/Login.png)
 
-! [screenshot of Active Site, Signup](Grandmas-Mismatched-Taxidermy/client/src/assets/screenshot/Signup.png)
+![screenshot of Active Site, Signup](./client/src/assets/screenshot/Signup.png)
 
 ## GitHub Repository
 https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy
